@@ -1,11 +1,11 @@
 module github.com/txsvc/storage
 
-go 1.17
+go 1.19
 
 require (
 	cloud.google.com/go/storage v1.21.0
-	github.com/stretchr/testify v1.7.0
-	github.com/txsvc/stdlib/v2 v2.1.0
+	github.com/stretchr/testify v1.8.0
+	github.com/txsvc/stdlib/v2 v2.5.0
 )
 
 require (
@@ -17,9 +17,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/go-cmp v0.5.7 // indirect
 	github.com/googleapis/gax-go/v2 v2.1.1 // indirect
-	github.com/kr/text v0.2.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rogpeppe/go-internal v1.6.1 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8 // indirect
@@ -31,5 +29,5 @@ require (
 	google.golang.org/genproto v0.0.0-20220216160803-4663080d8bc8 // indirect
 	google.golang.org/grpc v1.44.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

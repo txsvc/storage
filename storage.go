@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/txsvc/stdlib/v2/provider"
+	"github.com/txsvc/stdlib/v2/deprecated/provider"
 )
 
 const (

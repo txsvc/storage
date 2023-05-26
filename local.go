@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/txsvc/stdlib/v2/provider"
+	"github.com/txsvc/stdlib/v2/deprecated/provider"
 )
 
 type (
