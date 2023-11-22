@@ -23,6 +23,7 @@ type (
 
 	ObjectHandle interface {
 		Close() error
+		Delete() error
 		NewReader(context.Context) (io.Reader, error)
 		NewWriter(context.Context) (io.Writer, error)
 	}

@@ -87,6 +87,14 @@ func (obj *objImpl) Close() error {
 	return nil
 }
 
+func (obj *objImpl) Delete() error {
+	if obj.file != nil {
+		obj.file.Close()
+	}
+	path := filepath.Join(obj.bucket, obj.name)
+	return os.Remove(path)
+}
+
 func (obj *objImpl) NewReader(context.Context) (io.Reader, error) {
 	path := filepath.Join(obj.bucket, obj.name)
 	if _, err := os.Stat(path); err != nil {

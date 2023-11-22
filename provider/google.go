@@ -95,6 +95,16 @@ func (obj *objImpl) Close() error {
 	return nil
 }
 
+func (obj *objImpl) Delete() error {
+	if obj.reader != nil {
+		obj.reader.Close()
+	}
+	if obj.writer != nil {
+		obj.writer.Close()
+	}
+	return obj.handle.Delete(context.Background())
+}
+
 func (obj *objImpl) NewReader(ctx context.Context) (io.Reader, error) {
 	if obj.reader != nil {
 		obj.reader.Close()
